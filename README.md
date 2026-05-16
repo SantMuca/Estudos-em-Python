@@ -59,5 +59,3 @@ A evolução natural do gerenciador de terminal para uma plataforma web real. Es
 * **Design & Tipografia:** Google Fonts, Ícones estruturados em vetores SVG nativos
 
 ---
-
-*Este repositório reflete uma progressão clara no aprendizado e na engenharia de software, saindo dos fundamentos algorítmicos puros até a entrega de uma aplicação utilitária completa.* 🚀
