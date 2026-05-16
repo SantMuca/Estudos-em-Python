@@ -1,71 +1,63 @@
-# Tarefas (Flask CRUD Application) 🐍
+# Projetos Solo - Estudos em Python 🐍
 
-Um gerenciador de tarefas web completo e profissional, construído com Python e o micro-framework Flask. O projeto evoluiu de uma aplicação simples de terminal para uma plataforma web Full-Stack com persistência de dados em JSON e uma interface de usuário moderna e responsiva.
-
----
-
-## 💻 Recursos Atuais
-
-Este projeto implementa um sistema CRUD completo, focado na experiência do usuário e na organização.
-
-### 🚀 Novas Funcionalidades Web:
-
-* **Interface Web Moderna:** Design minimalista e elegante inspirado no `Instrument Serif` e `DM Sans`, com paleta de cores centralizada e animações suaves (`fadeUp`, `slideDown`).
-* **CRUD Completo no Navegador:**
-    * **Criar (Create):** Adicionar tarefas via formulário interativo (com título e descrição opcional).
-    * **Ler (Read):** Visualizar a lista completa de tarefas pendentes e concluídas.
-    * **Atualizar (Update):**
-        * Marcar tarefas como concluídas com feedback visual (linha tachada, cor verde).
-        * **Edição Inline:** Modificar o título e a descrição de tarefas existentes diretamente na linha da tarefa, sem sair da página, mantendo o status atual.
-    * **Deletar (Delete):** Remover tarefas com uma confirmação de segurança (pop-up nativo) para evitar exclusões acidentais.
-* **Persistência de Dados em JSON:** Todas as tarefas são salvas no arquivo `tarefas.json`, garantindo que os dados não sejam perdidos ao reiniciar o servidor.
-* **Lógica Dinâmica com Jinja2:** Painel de estatísticas em tempo real (Total, Pendentes, Concluídas) e geração de IDs únicos para interação (sanfonas, edição).
-* **Interatividade com JavaScript:** Lógica de sanfona (acordeão) para expandir/retrair descrições com setinhas dinâmicas (`▶` e `▼`), confirmações de exclusão e controle de visibilidade dos formulários.
-* **Design Responsivo:** Adaptado para telas de celulares e desktops.
-* **Personalização de Marca:** Logo customizada (`logo.png`) integrada ao cabeçalho.
+Bem-vindo(a) ao meu repositório de projetos solo!
+Este espaço é dedicado a armazenar e documentar a minha jornada de estudos na linguagem Python. Aqui, desenvolvo projetos práticos para aplicar conceitos fundamentais de programação, evoluindo desde aplicações simples baseadas em linha de comando até sistemas web estruturados.
 
 ---
 
-## 🛠 Habilidades Praticadas
+## 💻 Projetos Incluídos
 
-Este projeto foi essencial para consolidar conhecimentos Full-Stack:
+Até o momento, este repositório contém os seguintes projetos detalhados:
 
-* **Python:** Lógica de CRUD aplicada, manipulação de estruturas de dados (Listas de Dicionários), funções e tratamento de exceções.
-* **Flask:** Criação de rotas dinâmicas, gerenciamento de contexto de requisições (`request`, `redirect`), renderização de templates (`render_template`).
-* **JSON:** Serialização e desserialização de dados para persistência.
-* **HTML:** Estruturação avançada (`<form>`, `<textarea>`, `<svg>`), semântica e acessibilidade.
-* **Jinja2:** Uso de loops (`for`), condicionais (`if/else`), definição de variáveis (`{% set %}`), filtros (`| length`, `| selectattr`) e manipulação de loops mágicos (`{{ loop.index0 }}`).
-* **CSS:** Uso de variáveis (`:root`), design responsivo (`@media`), animações (`@keyframes`, `transition`), tipografia (Google Fonts) e posicionamento flexível.
-* **JavaScript:** Manipulação do DOM (`getElementById`), controle de visibilidade (`display`), troca de conteúdo (`innerText`) e lógica de interação.
+### 1. 🧮 Calculadora Contínua (Terminal)
+
+Uma aplicação interativa via linha de comando que simula o funcionamento lógico de uma calculadora física de mesa. O programa executa operações matemáticas elementares e gerencia fluxos operacionais ininterruptos.
+
+* **Diferenciais e Recursos:**
+* **Memória de Estado:** Armazena o resultado do último cálculo e o utiliza automaticamente como o primeiro valor para a próxima operação.
+* **Fluxo de Controle Dinâmico:** Oferece um comando de reinicialização (`c`) que limpa a memória acumulada e redefine o estado operacional do programa, além de uma opção de saída graciosa.
+* **Validação Robusta:** Proteção ativa contra falhas clássicas de execução, como a inserção de caracteres não numéricos e tentativas de divisão por zero.
+
+
+* **Conceitos Aplicados:** Estruturação de funções modulares, loops infinitos de controle estrutural (`while True`), tratamento de exceções em tempo de execução (`try/except` com `ValueError` e `ZeroDivisionError`) e gerenciamento de variáveis com escopo global e estados nulos (`None`).
+
+### 2. 📝 Gerenciador de Tarefas (To-Do List - Terminal)
+
+Um sistema de gerenciamento básico baseado em terminal que simula operações de persistência de dados em memória RAM. O projeto foi projetado para exercitar a navegação por menus estruturados e manipulação de arranjos de dados estruturados.
+
+* **Diferenciais e Recursos:**
+* **Menu de Navegação:** Interface textual orientada por opções numéricas para direcionar as ações do usuário.
+* **Operações CRUD em Memória:** Mapeamento completo para Adicionar (Create), Listar (Read), Marcar status (Update) e Excluir tarefas (Delete).
+* **Feedback de Status:** Exibição dinâmica de índices e rótulos contextuais que identificam visualmente se uma tarefa está "Pendente" ou "Concluída".
+
+
+* **Conceitos Aplicados:** Estruturas de dados compostas (Listas contendo dicionários chave-valor), indexação iterativa com a função nativa `enumerate()`, manipulação de elementos via métodos de lista (como `.append()` e `.pop()`), e uso avançado de operadores ternários para otimização de condicionais textuais.
+
+### 3. 🌐 Painel de Tarefas Web (Flask & JSON Full-Stack)
+
+A evolução natural do gerenciador de terminal para uma plataforma web real. Este aplicativo Full-Stack combina a robustez lógica do Python no back-end com uma interface moderna, responsiva e de alta fidelidade visual no front-end.
+
+* **Diferenciais e Recursos:**
+* **Rigor Visual e UI/UX:** Layout minimalista e elegante projetado com fontes tipográficas selecionadas (`Instrument Serif` e `DM Sans`), paleta de cores harmonizada via variáveis CSS (`:root`), efeitos de iluminação radial e animações fluidas de carregamento (`fadeUp` e `slideDown`).
+* **Painel de Estatísticas Automatizado:** Um bloco inteligente no topo da página que calcula e exibe em tempo real o total de tarefas registradas, o volume de pendências e o índice de itens concluídos.
+* **Banco de Dados baseado em Arquivo (.json):** Integração com o sistema de arquivos local para ler e salvar os dados. Desligar o servidor ou reiniciar a máquina não apaga as informações.
+* **Sanfona Interativa (Acordeão) com Seta Dinâmica:** Uso de JavaScript nativo para ocultar e revelar painéis de descrição longa de cada tarefa. As setas indicadoras rotacionam suavemente entre os estados fechado (`▶`) e aberto (`▼`).
+* **Edição Inline Dinâmica:** Um botão de edição substitui a visualização normal da tarefa por um formulário pré-preenchido na própria linha, permitindo alterar títulos e anotações instantaneamente sem trocar de página.
+* **Confirmação e Segurança:** Filtros que ocultam botões desnecessários (como "Concluir" em tarefas já finalizadas) e alertas pop-up nativos para validação de exclusões.
+
+
+* **Conceitos Aplicados:** Desenvolvimento web com micro-framework Flask, arquitetura de Rotas Dinâmicas (`@app.route` aceitando parâmetros tipados como `<int:indice>`), processamento de requisições HTTP (GET/POST), herança e injeção de templates com Jinja2 (filtros `| length` e `| selectattr`), manipulação assíncrona do DOM (Document Object Model) via JavaScript, tratamento seguro de arquivos vazios e serialização/desserialização de strings através do módulo `json`.
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🛠 Tecnologias e Ferramentas Utilizadas
 
-Certifique-se de ter o Python e o Flask instalados.
-
-1.  Clone este repositório.
-2.  Abra o terminal na pasta do projeto (`Projeto_Web`).
-3.  Instale o Flask, se necessário:
-    ```bash
-    pip install flask
-    ```
-4.  Certifique-se de que a estrutura de pastas é:
-    ```text
-    Projeto_Web/
-    ├── app.py
-    ├── tarefas.json  (Opcional, será criado automaticamente)
-    ├── templates/
-    │   └── index.html
-    └── static/
-        └── logo.png
-    ```
-5.  Para rodar a aplicação, execute:
-    ```bash
-    python app.py
-    ```
-6.  Abra o navegador no endereço indicado (geralmente `http://127.0.0.1:5000`).
+* **Core:** Python 3.x
+* **Web Framework:** Flask
+* **Persistência:** JSON (JavaScript Object Notation)
+* **Front-end:** HTML5, CSS3 (Flexbox/Variables/Keyframes), JavaScript Embutido
+* **Design & Tipografia:** Google Fonts, Ícones estruturados em vetores SVG nativos
 
 ---
 
-*Repositório focado no aprendizado contínuo e evolução na engenharia de software Full-Stack.* 🚀
+*Este repositório reflete uma progressão clara no aprendizado e na engenharia de software, saindo dos fundamentos algorítmicos puros até a entrega de uma aplicação utilitária completa.* 🚀
